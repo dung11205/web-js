@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KTHPJS</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-JD+20Sd/8o/+9Fcbo2jz5ly2+6jZDW8Qs5teRZ5AM4CvdPisvNSYi/d2yfSzW1lUH5qu50Pbszkwri1xk7T7gg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="web">
+      <div class="header">
+        <ul class="logoweb">
+          <div class="tenlogo">ZING <div class="tenlogo-a">.</div>
+          </div>
+          <div class="home-bar">
+            <p id="a" class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </p>
+            <p id="a" class="nav-item">
+              <a id="contact" class="nav-link active" aria-current="page" href="#">Contact</a>
+            </p>
+            <p id="a" class="nav-item">
+              <a class="nav-link" href="#" id="aboutus">About us</a>
+            </p>
+            <p id="a" class="nav-item">
+              <a class="nav-link" href="#" id="Products">Products</a>
+            </p>
+            <p id="a" class="nav-item">
+              <a id="Testimonial" class="nav-link active " aria-current="page" href="#">Testimonial</a>
+            </p>
+          </div>
+          <p id="shop" class="nav-item"> Cart
+            <i class="bi bi-cart3"></i>
+          <div class="giohang"></div>
+          </p>
+          <button class="logo3">Log in</button>
+          <div id="Guest" class="dropdown">
+            <button data-bs-toggle="dropdown" id="Guest1">
+              Guest <i class="bi bi-person-square mx-1"></i></i><i class="bi bi-caret-down-fill mx-1"></i>
+            </button>
+            <div class="logout">
+              <p><i class="bi bi-person-circle mx-2"></i>Profile</p>
+              <p id="out1"><i class="bi bi-box-arrow-right mx-2"></i>Log Out</p>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <!--fom danwg nhap-->
+      <div class="aa">
+        <div class="dangnhap">
+          <ul class="nav nav-pills nav-justified mb-3" id="fom-xuong" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="tab-login" data-mdb-toggle="pill" href="#pills-login" role="tab"
+                aria-controls="pills-login" aria-selected="true">Login</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+              <div class="text-center mb-3">
+                <p>Sign in with:</p>
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                  <i class="bi bi-facebook"></i>
+                </button>
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                  <i class="bi bi-google"></i>
+                </button>
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                  <i class="bi bi-twitter"></i>
+                </button>
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                  <i class="bi bi-github"></i>
+                </button>
+              </div>
+              <p id="or" class="text-center">or:</p>
+              <!-- Email input -->
+              <div id="in" class="form-outline mb-4">
+                <input type="email" id="loginName" class="form-control" />
+                <label class="form-label" for="loginName">Email or username</label>
+              </div>
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                <input type="password" id="loginPassword" class="form-control" />
+                <label class="form-label" for="loginPassword">Password</label>
+              </div>
+              <!-- 2 column grid layout -->
+              <div class="row mb-4">
+                <div class="col-md-6 d-flex justify-content-center">
+                  <!-- Checkbox -->
+                  <div class="form-check mb-3 mb-md-0">
+                    <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
+                    <label class="form-check-label" for="loginCheck"> Remember me </label>
+                  </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center">
+                  <!-- Simple link -->
+                  <a href="#!">Forgot password?</a>
+                </div>
+              </div>
+              <!-- Submit button -->
+              <button id="login1" type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+              <button id="register" class="btn btn-primary btn-block mb-4">Register</button>
+              <!-- Register buttons -->
+              <div class="text-left">
+                <button class="close">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dangki">
+          <ul class="nav nav-pills nav-justified mb-3" id="fom-xuong" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="tab-register" data-mdb-toggle="pill" href="#pills-register" role="tab"
+                aria-controls="pills-register" aria-selected="true">Register</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+              <div class="text-center mb-3">
+                <p>Sign up with:</p>
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                  <i class="bi bi-facebook"></i>
+                </button>
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                  <i class="bi bi-google"></i>
+                </button>
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                  <i class="bi bi-twitter"></i>
+                </button>
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                  <i class="bi bi-github"></i>
+                </button>
+              </div>
+              <p class="text-center">or:</p>
+              <div id="input-len" class="form-outline mb-4">
+                <input type="text" id="registerName" class="form-control red" />
+                <label class="form-label" for="registerName">Name</label>
+              </div>
+              <!-- Username input -->
+              <div id="input-len" class="form-outline mb-4">
+                <input type="text" id="registerUsername" class="form-control red" />
+                <label class="form-label" for="registerUsername">Username</label>
+              </div>
+              <!-- Email input -->
+              <div id="input-len" class="form-outline mb-4">
+                <input type="email" id="registerEmail" class="form-control red" />
+                <label class="form-label" for="registerEmail">Email</label>
+              </div>
+              <!-- Password input -->
+              <div id="input-len" class="form-outline mb-4">
+                <input type="password" id="registerPassword" class="form-control red" />
+                <label class="form-label" for="registerPassword">Password</label>
+              </div>
+              <!-- Repeat Password input -->
+              <div id="input-len" class="form-outline mb-4">
+                <input type="password" id="registerRepeatPassword" class="form-control red" />
+                <label class="form-label" for="registerRepeatPassword">Repeat password</label>
+              </div>
+              <!-- Checkbox -->
+              <div class="form-check d-flex justify-content-center mb-4">
+                <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked
+                  aria-describedby="registerCheckHelpText" />
+                <label class="form-check-label" for="registerCheck">
+                  I have read and agree to the terms
+                </label>
+              </div>
+              <!-- Submit button -->
+              <button id="dangki" type="submit" class="btn btn-primary btn-block mb-3">
+                Register</button>
+              </form>
+            </div>
+          </div>
+          <button class="close1">Close</button>
+        </div>
+      </div>
+      <h1 id="title">Amazing furniture for <br>your home
+        <svg id="arrow-title" width="197" height="230" viewBox="0 0 197 230" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M125.127 212.895C126.48 212.726 126.987 212.895 127.495 212.726C158.438 194.077 179.406 167.629 187.353 132.027C189.382 123.042 189.044 113.717 186.677 104.562C181.773 84.8965 165.371 71.3337 145.249 70.147C134.766 69.4688 124.62 70.6556 115.489 76.4198C114.813 81.3363 114.306 86.2528 113.291 90.8302C111.6 98.2897 107.711 104.393 100.778 108.123C95.7056 111.005 90.6328 111.005 87.9274 108.292C84.3764 104.732 84.3765 99.9851 86.5747 96.0858C89.6183 90.6607 93.3383 85.5746 97.2274 80.8276C99.7637 77.776 103.146 75.233 106.189 72.69C103.315 53.5326 85.2219 45.3949 63.5783 53.3631C62.9019 56.0756 62.2255 58.9577 61.38 61.6702C57.9982 71.6728 51.7419 79.3018 41.5964 82.8621C37.7073 84.2183 33.48 84.727 30.0982 81.1667C27.5618 78.4542 27.5618 73.7072 30.2673 68.9602C34.6637 61.5007 41.2582 56.2451 48.3601 51.6677C50.8964 50.1419 53.4328 48.6161 55.9692 47.2598C52.5873 17.5913 26.04 -3.43102 0 8.4364C0.169091 6.23245 -1.03306e-05 4.36757 0.676354 3.35036C1.52181 2.16362 3.38181 1.48549 4.90363 1.14642C19.2764 -1.56614 32.6346 0.129206 43.6255 10.6403C51.9109 18.4389 57.491 27.9329 61.211 38.7831C61.7183 40.3089 62.2255 41.8347 62.9019 43.3605C62.9019 43.5301 63.24 43.6996 63.9164 44.2082C65.4382 44.0387 67.2982 44.0387 69.1582 43.6996C91.8164 40.1394 103.653 46.2426 114.136 67.4344C116.166 66.7563 118.533 66.0781 120.731 65.2305C133.751 60.8226 146.771 60.4835 159.96 64.8914C181.435 72.0119 195.3 90.4911 196.822 113.887C197.667 126.602 195.469 138.808 190.904 150.676C179.744 179.327 161.482 201.875 134.089 216.625C132.736 217.473 131.215 218.151 129.862 218.998C129.693 219.168 129.524 219.507 129.016 220.524C134.766 221.88 140.177 221.372 145.587 221.033C150.829 220.863 156.24 220.355 161.989 220.016C161.482 224.423 159.115 226.119 156.24 227.136C152.858 228.153 149.477 229.509 146.095 229.679C136.964 230.018 127.664 230.188 118.364 229.679C111.093 229.17 109.064 225.271 112.276 219.337C119.209 206.792 126.311 194.246 133.413 181.701C134.596 179.666 136.118 177.971 137.978 175.597C141.191 179.327 139.838 182.04 138.655 184.583C133.92 193.738 129.693 202.893 125.127 212.895ZM35.1709 76.0807C46.8382 74.5549 54.1091 67.0954 54.6164 56.5842C46.8382 61.6702 39.3982 66.2477 35.1709 76.0807ZM92.3237 102.359C102.3 99.9851 107.035 93.2037 106.02 82.8621C99.5947 88.2872 94.0146 93.3732 92.3237 102.359Z"
+            fill="#F66B0E" />
+        </svg>
+      </h1>
+      <h4 id="tieude1">We think the chair is the most important piece of furniture in your home. Because if you love
+        <br>the chair you are sitting in chances are you will love the rest of the room.
+      </h4>
+      <div class="anhtieude">
+        <input id="search" type="search">
+        <div class="search1"><i id="iconsearch" class="bi bi-search"></i></div>
+      </div>
+      <div id="lay3" class="lay3">
+        <h1 id="tieudelay2">About us</h1>
+        <h4 id="tieudelay2-1">Comfort is key and how you feel about your chair will <br>affect how you feel and your
+          mood.</h4>
+        <div class="lay3-1">
+          <div class="lay3-1-1">
+            <h1 id="so">1</h1>
+            <h3 id="so1">Mission</h3>
+            <h4 id="so2">It makes people at ease and feel like they want to open up.</h4>
+          </div>
+          <div class="lay3-1-1">
+            <h1 id="so">2</h1>
+            <h3 id="so1">Motivations</h3>
+            <h4 id="so2">The perfect mix of art that complements the room's style.</h4>
+          </div>
+          <div class="lay3-1-1">
+            <h1 id="so">3</h1>
+            <h3 id="so1">Vision</h3>
+            <h4 id="so2">Along with a healthy dose of negative space to give the eyes spots to rest.</h4>
+          </div>
+          <div class="lay3-1-1">
+            <h1 id="so">4</h1>
+            <h3 id="so1">Goal</h3>
+            <h4 id="so2">Art that has meaning to the people who live in the space.</h4>
+          </div>
+          <div class="anhabout1"></div>
+          <div class="anhabout2"></div>
+          <div class="anhabout3"></div>
+          <div class="anhabout4"></div>
+        </div>
+      </div>
+      <div id="goods" class="goods">
+        <div class="Products">Products</div>
+        <div class="control">
+          <div type="all" class="knot">All</div>
+          <div type="chair" class="knot">Chair</div>
+          <div type="table" class="knot">Table</div>
+          <div type="bed" class="knot">Bed</div>
+          <div type="cabinet" class="knot">cabinet</div>
+          <div type="sofa" class="knot">Sofa</div>
+        </div>
+        <div class="sectors" id="container">
+          <div class="CATEGORY">
+            <div class="category" type="sofa">
+              <img class="image-product" src="./img/sofa nau.png">
+              <div class="tensanpham"> Brown Sofa </div>
+              <div class="price">$100
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="sofa">
+              <img class="image-product" src="./img/sofa-vang.png">
+
+              <div class="tensanpham">Yellow Sofa </div>
+              <div class="price">$300
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="sofa">
+              <img class="image-product" src="./img/sf4.png">
+              <div class="tensanpham">White Sofa </div>
+              <div class="price">$250
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="sofa">
+              <img class="image-product" src="./img/sofa-do.png">
+
+              <div class="tensanpham">Red Sofa </div>
+              <div class="price">$300
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="sofa">
+              <img class="image-product" src="./img/sofa violet.png">
+
+              <div class="tensanpham">Violet Sofa </div>
+              <div class="price">$300
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="sofa">
+              <img class="image-product" src="./img/sofa xanh.png">
+
+              <div class="tensanpham">green Sofa </div>
+              <div class="price">$300
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="sofa">
+              <img class="image-product" src="./img/sofa black.png">
+
+              <div class="tensanpham">Black Sofa </div>
+              <div class="price">$300
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="sofa">
+              <img class="image-product" src="./img/sofa blue.png">
+
+              <div class="tensanpham">Blue Sofa </div>
+              <div class="price">$300
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="chair">
+              <img class="image-product" src="./img/ch1.png">
+
+              <div class="tensanpham">Stool</div>
+              <div class="price">$300
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="chair">
+              <img class="image-product" src="./img/ch2.png">
+
+              <div class="tensanpham">Light-Grey Chair </div>
+              <div class="price">$300
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="chair">
+              <img class="image-product" src="./img/ch4.png">
+
+              <div class="tensanpham"> Light-Brown Chair</div>
+              <div class="price">$300
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="chair">
+              <img class="image-product" src="./img/ch5.png">
+
+              <div class="tensanpham">White Chair</div>
+              <div class="price">$400
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="chair">
+              <img class="image-product" src="./img/ghexanh.png">
+
+              <div class="tensanpham">Green Chair</div>
+              <div class="price">$200
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="chair">
+              <img class="image-product" src="./img/ghenau.png">
+
+              <div class="tensanpham">Brown Chair</div>
+              <div class="price">$300
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="chair">
+              <img class="image-product" src="./img/ghecao.png">
+
+              <div class="tensanpham">high chair</div>
+              <div class="price">200
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="chair">
+              <img class="image-product" src="./img/ghevong.png">
+
+              <div class="tensanpham">Hammock chair</div>
+              <div class="price">$300
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="bed">
+              <img class="image-product" src="./img/giuongden.png">
+
+              <div class="tensanpham"> Black Bed</div>
+              <div class="price">$300
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="bed">
+              <img class="image-product" src="./img/giuongtrang.png">
+
+              <div class="tensanpham">White Bed</div>
+              <div class="price">$250
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="bed">
+              <img class="image-product" src="./img/giuongxam.png">
+
+              <div class="tensanpham">Gray Bed </div>
+              <div class="price">$300
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="bed">
+              <img class="image-product" src="./img/giuonggo.png">
+
+              <div class="tensanpham">Wood Bed</div>
+              <div class="price">$100
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="bed">
+              <img class="image-product" src="./img/giuonghlkt.png">
+
+              <div class="tensanpham">Hello kitty Bed</div>
+              <div class="price">$100
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="bed">
+              <img class="image-product" src="./img/draemong.png">
+
+              <div class="tensanpham">Doraemon Bed</div>
+              <div class="price">$100
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="bed">
+              <img class="image-product" src="./img/pkc.png">
+
+              <div class="tensanpham">Pikachu Bed</div>
+              <div class="price">$100
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="bed">
+              <img class="image-product" src="./img/totoro.png">
+
+              <div class="tensanpham">Totoro Bed</div>
+              <div class="price">$200
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="table">
+              <img class="image-product" src="./img/bantron.png">
+
+              <div class="tensanpham">round table</div>
+              <div class="price">$100
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="table">
+              <img class="image-product" src="./img/bango.png">
+
+              <div class="tensanpham">wood table</div>
+              <div class="price">$180
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="table">
+              <img class="image-product" src="./img/banbia.png">
+
+              <div class="tensanpham">Pool table</div>
+              <div class="price">$40
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="table">
+              <img class="image-product" src="./img/bantronden.png">
+
+              <div class="tensanpham">black round table </div>
+              <div class="price">$90
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="table">
+              <img class="image-product" src="./img/banvuong.png">
+
+              <div class="tensanpham"> Square Table</div>
+              <div class="price">$200
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="table">
+              <img class="image-product" src="./img/bannhua.png">
+
+              <div class="tensanpham"> plastic table</div>
+              <div class="price">$300
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="table">
+              <img class="image-product" src="./img/banhlkt.png">
+
+              <div class="tensanpham">hello kitty table</div>
+              <div class="price">$250
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="table">
+              <img class="image-product" src="./img/banhocbta.png">
+
+              <div class="tensanpham">Doraemon Table</div>
+              <div class="price">$150
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="cabinet">
+              <img class="image-product" src="./img/pink.png">
+
+              <div class="tensanpham">Pink Cabinet</div>
+              <div class="price">$300
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="cabinet">
+              <img class="image-product" src="./img/gray.png">
+
+              <div class="tensanpham">Gray Cabinet</div>
+              <div class="price">$200
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="cabinet">
+              <img class="image-product" src="./img/black.png">
+
+              <div class="tensanpham">Black Cabinet</div>
+              <div class="price">$300
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="cabinet">
+              <img class="image-product" src="./img/nau.png">
+
+              <div class="tensanpham">Brown cabinet</div>
+              <div class="price">$250
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="cabinet">
+              <img class="image-product" src="./img/chuot.png">
+
+              <div class="tensanpham">mickey cabinet</div>
+              <div class="price">$250
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="cabinet">
+              <img class="image-product" src="./img/elsa.png">
+
+              <div class="tensanpham">Elsa cabinet</div>
+              <div class="price">$250
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="cabinet">
+              <img class="image-product" src="./img/drm.png">
+
+              <div class="tensanpham">Doraemon cabinet </div>
+              <div class="price">$250
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+            <div class="category" type="cabinet">
+              <img class="image-product" src="./img/pkm.png">
+
+              <div class="tensanpham">pokemon cabinet</div>
+              <div class="price">$300
+                <i id="heart" class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="opinion" class="opinion">
+        <div class="whatdo">What do customers say...</div>
+        <div class="khungcontent">
+          <div class="khungimage1">
+
+          </div>
+          <div class="khungngoisao">
+            <svg width="157" height="150" viewBox="0 0 157 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M78.5 0L86.2588 71.821L156.962 57.0061L91.0539 86.579L126.992 149.244L78.5 95.7L30.0077 149.244L65.9461 86.579L0.0378342 57.0061L70.7412 71.821L78.5 0Z"
+                fill="#F66B0E" />
+            </svg>
+          </div>
+          <div class="vvv">
+            <svg width="23" height="45" viewBox="0 0 23 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.225 22.0751H3.5C3.7 10.4001 6 8.47505 13.175 4.22505C14 3.72505 14.275 2.67505 13.775 1.82505C13.3 1.00005 12.225 0.72505 11.4 1.22505C2.95 6.22505 0 9.27505 0 23.8V37.275C0 41.55 3.475 45 7.725 45H15.225C19.625 45 22.95 41.675 22.95 37.275V29.7751C22.95 25.4001 19.625 22.0751 15.225 22.0751Z"
+                fill="#F66B0E" />
+            </svg>
+            <svg width="23" height="45" viewBox="0 0 23 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.225 22.0751H3.5C3.7 10.4001 6 8.47505 13.175 4.22505C14 3.72505 14.275 2.67505 13.775 1.82505C13.3 1.00005 12.225 0.72505 11.4 1.22505C2.95 6.22505 0 9.27505 0 23.8V37.275C0 41.55 3.475 45 7.725 45H15.225C19.625 45 22.95 41.675 22.95 37.275V29.7751C22.95 25.4001 19.625 22.0751 15.225 22.0751Z"
+                fill="#F66B0E" />
+            </svg>
+          </div>
+          <div id="k1" class="frame12">
+            Amazing service
+            <div class="frame12-1">
+              Since the online marketplace can be a scary place, <br>
+              the presence of customer reviews on an online store helps establish authenticity,
+              confidence, and trust among shoppers. <br>
+            </div>
+            <div class="frame12-2">Wade Warren</div>
+            <div class="frame12-3">Doctor</div>
+          </div>
+
+        </div>
+        <div class="khungarrows">
+          <svg id="ff1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+            class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+          </svg>
+        </div>
+      </div>
+      <div id="khung1" class="khung1">
+        <div class="khunganh1">
+          <div class="boxanh1"></div>
+          <div class="boxanh2"></div>
+          <div class="boxanh3"></div>
+          <div class="boxanh4"></div>
+        </div>
+        <div id="khungcontact" class="khungcontact">
+          <div class="content">
+            <div class="us">Contact us</div>
+            <br />
+            <div class="ourteam">Our team would love to hear from you!</div>
+          </div>
+          <div class="fields">
+            <div class="d-flex flex-row">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control custom-input" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput" class="custom-label">Email address</label>
+              </div>
+              <div class="form-floating ml-3">
+                <input type="passwor" class="form-control custom-input1" id="floatingPassword" placeholder="Password">
+                <label for="floatingInput" class="custom-label1">Last name</label>
+              </div>
+            </div>
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+              <label for="floatingTextarea">Email address</label>
+            </div>
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 10px"></textarea>
+              <label for="floatingTextarea2">Message</label>
+            </div>
+            <div class="sendmesss" onclick="sendmesss()">Send Message</div>
+            <div id="errorContainer" class="error-message"></div>
+          </div>
+        </div>
+      </div>
+    <div class="khungfooter">
+      <div class="container-framea">
+        <div class="col1">
+          <div class="text-link0"></div>
+          <div class="text-link2" id="address-link">4517 Washington Ave. Manchester, Kentucky 39495</div>
+        </div>
+        <div class="col2">
+          <div class="text-link1"><b>Quick links </b></div>
+          <div class="text-link2">About Us</div>
+          <div class="text-link2">Find store</div>
+          <div class="text-link2">Categories</div>
+          <div class="text-link2">Blogs</div>
+        </div>
+        <div class="col3">
+          <div class="text-link1"><b>Policy</b></div>
+          <div class="text-link2">Help Center</div>
+          <div class="text-link2">Money Refund</div>
+          <div class="text-link2">Shipping</div>
+          <div class="text-link2">Contact us</div>
+        </div>
+        <div class="col4">
+          <div class="text-link1"><b>Social</b></div>
+          <div class="text-link2">Login</div>
+          <div class="text-link2" id="fb-link">Facebook</div>
+          <div class="text-link2" id="insta-link">Instagram</div>
+          <div class="text-link2" id="yt-link">Youtube</div>
+        </div>
+      </div>
+      <div class="copyright">Copyright ©2022 Zing Inc. All right reserved.</div>
+    </div>
+  </div>
+</div>
+
+  <script src="./main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
